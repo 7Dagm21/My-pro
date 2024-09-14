@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My hobby</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #ff6b6b, #ffa500, #ffff00);
+        text-align: center;
+      }
+      .dark {
+        justify-content: center;
+        align-items: center;
+        padding: 8px 10px;
+        margin: 0 auto;
+        background: black;
+        color: white;
+        transition: all 200ms ease-in-out;
+      }
+      .dark:hover {
+        background: white;
+        color: black;
+      }
+      .body {
+        background: white;
+        max-width: 700px;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .img1 {
+        justify-content: center;
+        align-items: center;
+
+        margin-left: 20px;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+      }
+      .images {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-gap: 20px;
+        margin-left: 35px;
+
+        transition: all 200ms ease-in-out;
+      }
+      .images img {
+        border-radius: 10px;
+      }
+      img:hover {
+        transform: scale(1.5);
+        filter: contrast(90%);
+      }
+      p {
+        text-align: center;
+        font-size: 15px;
+      }
+      button {
+        padding: 8px 10px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #ff6b6b;
+      }
+      button:hover {
+        background: linear-gradient(to right, #ff6b6b, #ffa500, #ffff00);
+        border-color: blueviolet;
+      }
+      .white {
+        background: white;
+        color: black;
+      }
+      .black  {
+        background: black;
+        color:white;
+    }
+    .black .body{
+        background:rgba(255,255,255,0.2);
+    }
+    
+    </style>
+  </head>
+  <body>
+    <button class="dark">Dark Theme</button>
+    <div class="body">
+      <h1>Begena</h1>
+
+      <img
+        src="https://s.rfi.fr/media/display/c749bb5e-30ac-11ec-9f53-005056bf30b7/w:1280/p:1x1/Alemu%20Aga%20Maison%20des%20cultures%20du%20monde.jpg"
+        width="500px"
+        height="300px"
+        class="img1"
+      /><br />
+      <div class="images">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/BegenaFingers.jpg/220px-BegenaFingers.jpg"
+          width="200px"
+          height="200px"
+          class="img2"
+        />
+        <img
+          src="https://i.ytimg.com/vi/PQ3QKKFP1Ts/sddefault.jpg"
+          width="200px"
+          height="200px"
+          class="img3"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/4/49/Playing_Begena.jpg"
+          width="200px"
+          height="200px"
+          class="img4"
+        />
+      </div>
+      <p>
+        The begena, (Amharic: በገና) is a ten-stringed box-lyre instrument from
+        Ethiopia & Eritrea, and is the sole melodic instrument devoted only to
+        the zema, the spiritual part of Ethiopian music. It is a solo instrument
+        used for religious and meditative purposes and is often accompanied only
+        by the singing voice.
+      </p>
+      <a href="https://hadgi.com/begena/" target="_blank"
+        ><button>See more</button></a
+      >
+    </div>
+    <br />
+    <a href="https://www.linkedin.com/in/dagmawit-yoseph-8041bb285/"
+      >Coded by Dagmawit Yoseph</a
+    >
+      <script>
+    function Theme() {
+      let Dark = document.querySelector("body");
+      Dark.classList.toggle("black");
+     
+    }
+
+    let button = document.querySelector(".dark");
+    button.addEventListener("click", Theme);
+  </script>
+  </body>
+
+</html>

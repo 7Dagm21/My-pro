@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week2</title>
+  </head>
+  <body>
+    <script>
+      function askForCountry() {
+        let country = prompt("What country are you from?");
+        let lowercaseValue = country.toLowerCase();
+        if (lowercaseValue === "brazil" || lowercaseValue === "portugal") {
+          alert("You speak Portuguese");
+        } else {
+          alert("Go learn portuguese");
+        }
+      }
+
+      askForCountry();
+
+    </script>
+  </body>
+</html>

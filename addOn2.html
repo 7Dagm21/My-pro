@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Places</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    .image-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform-style: preserve-3d;
+      transition: transform 0.3s ease-in-out;
+      width: 600px;
+      height: 400px;
+    }
+    .img1 {
+      transform: rotate(10deg);
+      height: 200px;
+      width: 300px;
+      margin: 50px;
+      top: 100px;
+    }
+    .img2 {
+      transform: rotate(20deg);
+      height: 200px;
+      width: 300px;
+      margin: 50px;
+    }
+    .img3 {
+      transform: rotate(30deg);
+      height: 200px;
+      width: 300px;
+      margin: 50px;
+    }
+    .img4 {
+      transform: rotate(40deg);
+      height: 200px;
+      width: 300px;
+      margin: 50px;
+    }
+
+    .image-container:hover {
+      transform: translateY(-20px) scale(1.1);
+    }
+  </style>
+  <body>
+    <div class="image-container">
+      <img
+        src="https://destinyethiopiatours.com/wp-content/uploads/Lalibela-Short-Trips-Tour-Packages-in-Ethiopia-Destiny-Ethiopia-Tours.jpg"
+        class="img1"
+      />
+      <img src="https://pbs.twimg.com/media/DtWcNgxU8AAehjQ.jpg" class="img2" />
+      <img
+        src="https://i.natgeofe.com/n/efa8dd41-0cba-48eb-8598-562fe74884df/israel-travel_16x9.jpg"
+        class="img3"
+      />
+      <img
+        src="https://media-cdn.tripadvisor.com/media/photo-s/1b/ec/5e/ea/lake-tana-monasteries.jpg"
+        class="img4"
+      />
+    </div>
+  </body>
+</html>
